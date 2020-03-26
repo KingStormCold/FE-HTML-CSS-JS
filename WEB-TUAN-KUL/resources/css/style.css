@@ -1,3 +1,6 @@
+/* ---------------------------------------- */
+/* --------DEFAULT SETUP------------- */
+/* ---------------------------------------- */
 *{
     padding: 0px;
     margin: 0px;
@@ -13,7 +16,77 @@ html{
 }
 
 /* -------------------------------------- */
+/* -----------REUSEABLE COMPONENT-------- */
+/* -------------------------------------- */
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    max-width: 80%;
+    margin: 0 auto;
+}
+h1,h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;/*khoảng cách giữa các chữ đi chung với word-spacing*/
+}
+h1 .heading-main-h1{
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5px;
+    color: white;
+    line-height: 135%;/* khoảng cách giữa các dòng*/
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+}
+/* dòng kẻ ở dưới h2 */
+h2::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(230, 126, 34,0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.p-long {
+    text-align: center;
+    color: #265077;
+    font-size: 22px;
+    margin: 30px 0;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+
+section{
+    padding: 50px;
+}
+/* -------------------------------------- */
 /* ------------------HEADER-------------- */
+/* -------------------------------------- */
 header {
     /* background-image: linear-gradient(45deg, rgb(38, 80, 119) 55%,rgb(45, 95, 93)), url("../img/background4.jpeg"); */
     background-image: linear-gradient(to right top, rgb(38, 80, 119,0.8),rgb(45, 95, 93, 0.5)), url("../img/background4.jpeg");
@@ -23,10 +96,10 @@ header {
     background-attachment: fixed;
 }
 .logo {
-    width: 350px;
+    width: 250px;
     float: left;
     margin-left: 70px;
-    margin-top: -50px;
+    margin-top: -20px;
 }
 .main-nav {
     float: right;
@@ -52,12 +125,24 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid white;/*khi click chuột vào sẽ có sự thay đổi là thêm border-bottom bên dưới tag a*/
 }
-.row {
+
+.heading-main-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
-    margin: 0 auto;
 }
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+
+.btn:hover,
+.btn:active {
+    background-color: #d35400;
+    color: blue;
+}
+
+/* -------------------------------------- */
+/* ----------------ABOUT SECTION */
+/* -------------------------------------- */
+.about-picture img {
+    width: 90%;
 }
