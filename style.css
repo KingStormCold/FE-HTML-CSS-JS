@@ -36,11 +36,15 @@ h1 {
 .container{  
     width: 1140px;
     margin: 0 auto;
+    background-color: aliceblue;
+    padding-top: 50px;
+    position: relative;
 }
 .content{
     background-color: palegoldenrod;
     width: 75%;
     float: left;
+    position: relative;
 }
 
 .avatar{
@@ -56,4 +60,12 @@ h1 {
     content: "";
     display: table;
     clear: both;
+}
+.date {
+    /* position: fixed; cố định dù croll chuột thì vẫn nằm ở vị trí đó, lấy vị trí của màn hinh làm góc*/
+    /* position: relative; sẽ lấy vị trí ngay tại element làm gốc*/
+    /* position: absolute; croll chuột thì mất ở vị trí đó, lấy vị trí của element cha gần nhất làm position, thường thấy ở notification của fb*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }

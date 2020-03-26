@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------------- */
+/* ------------------HEADER-------------- */
+header {
+    /* background-image: linear-gradient(45deg, rgb(38, 80, 119) 55%,rgb(45, 95, 93)), url("../img/background4.jpeg"); */
+    background-image: linear-gradient(to right top, rgb(38, 80, 119,0.8),rgb(45, 95, 93, 0.5)), url("../img/background4.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.logo {
+    width: 350px;
+    float: left;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 1s;/* thời gian hiển thị của border-bottom ;*/
+    padding: 3px 0;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid white;/*khi click chuột vào sẽ có sự thay đổi là thêm border-bottom bên dưới tag a*/
+}
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
