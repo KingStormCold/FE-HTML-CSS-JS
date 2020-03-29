@@ -272,3 +272,64 @@ cite img {
     height: 50px;
     vertical-align: middle;
 }
+
+/* --------------------------------------------- */
+/* ------------SPONSORS SECTION----------------- */
+/* --------------------------------------------- */
+
+.sponsors-section {
+    background-color: #f4f4f4;
+}
+.sponsors-showcase {
+    margin-left: 8%;
+}
+.sponsors-showcase li {
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    /* khoan cach thi dung margin */
+}
+.sponsors-section h2 {
+    margin-bottom: 50px;
+}
+.logo-sponsors {
+    width: 140px;
+    cursor: pointer;/* hình con chuột là bàn tay */
+    transition: all 0.7s;
+}
+.sponsors-showcase li .logo-sponsors:hover,
+.sponsors-showcase li .logo-sponsors:active {
+    transform: scale(1.2);
+    cursor: pointer;/* hình con chuột là bàn tay */
+}
+figcaption {
+    color: #265077;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+/* --------------------------------------------- */
+/* ----------------CONTACT SECTION-------------- */
+/* --------------------------------------------- */
+.contact-section {
+    background-image: linear-gradient(to right top, rgb(38, 80, 119,0.8),rgb(45, 95, 93, 0.5)), url("../img/background5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-section li {
+    list-style: none;
+}
+
+/* --------------------------------------------- */
+/* ----------------FOOTER----------------- */
+/* --------------------------------------------- */
+
+footer {
+    text-align: center;
+    background-color: #8d8282;
+    color: red;
+    padding: 20px;
+}
