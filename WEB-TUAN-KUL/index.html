@@ -5,6 +5,11 @@
 <!-- https://www.wix.com/logo/maker -->
 <!-- responsive -->
 <!-- glyph css trick -->
+<!-- magnific popup -->
+<!-- maplacejs -->
+<!-- waypoint -->
+<!-- imagecompressor.com -->
+<!-- https://javascript-minifier.com/ -->
 <!DOCTYPE html>
 <html>
 
@@ -22,14 +27,17 @@
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="./resources/img/tuankul.PNG" class="logo" alt="Logo"></a>
-        <ul class = "main-nav">
-            <li><a href="#">How Client Think</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Production</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <header id= "home">
+        <nav>
+            <a href="#home"><img src="./resources/img/tuankul.PNG" class="logo" alt="Logo"></a>
+            <ul class = "main-nav">
+                <li><a href="#testimonial">How Client Think</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Production</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars mobile-nav-icon"></i>
+        </nav>
         <div class="clearfix"></div>
         <div class="row">
             <div class="heading-main-box">
@@ -37,12 +45,12 @@
                     We will study <br> English together.<br>
                     So join with us.
                 </h1>
-                <a href="#" class="btn">Tell me more</a>
-                <a href="#" class="btn">Join us</a>
+                <a href="#about" class="btn">Tell me more</a>
+                <a href="#products" class="btn">Join us</a>
             </div>
         </div>
     </header>
-    <section class="about-section">
+    <section class="about-section" id ="about">
         <div class="row">
             <h2>About us</h2>
             <p class="p-long">
@@ -76,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="products-section">
+    <section class="products-section" id ="products">
         <div class="row">
             <h2>Products</h2>
         </div>
@@ -109,7 +117,7 @@
                 <a href="#" class="btn">Join Us</a>
             </div>
         </div>
-        <section class="testimonial-section">
+        <section class="testimonial-section" id ="testimonial">
             <h2>Testimonial</h2>
             <div class="row">
                 <div class="col-4 testimonial-box">
@@ -139,7 +147,7 @@
             </div>
         </section>
     </section>
-    <section class="sponsors-section">
+    <section class="sponsors-section" id ="sponsors">
         <h2>Sponsors</h2>
         <div class="row">
             <ul class="sponsors-showcase clearfix">
@@ -196,7 +204,7 @@
             </ul>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id = "contact">
         <div class="row">
             <div class="col-4">
                 <ul class="information">
@@ -249,6 +257,9 @@
             Copyright &copy Tuan Kul
         </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/scripts.js"></script>
 </body>
 
 </html>

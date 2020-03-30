@@ -160,7 +160,36 @@ header {
     background-color: #d35400;
     color: cyan;
 }
+.sticky {
+    background-color: rgb(107, 135, 148, 0.9);
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 8.3%;
+}
+.sticky .logo {
+    width: 250px;
+    margin: 0px;
+    margin-bottom: -70px;
+}
+.sticky .main-nav {
+    margin-top: 30px;
+}
 
+/* ------------------mobile navigation */
+.mobile-nav-icon {
+    font-size: 200%;
+    color: #6b95bd;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    display: none;
+}
+.sticky .mobile-nav-icon{
+    top: 30px;
+}
 /* -------------------------------------- */
 /* ----------------ABOUT SECTION */
 /* -------------------------------------- */

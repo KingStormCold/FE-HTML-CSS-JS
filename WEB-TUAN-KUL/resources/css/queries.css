@@ -49,12 +49,30 @@
     }
 }
 
+@media only screen and (max-width: 570px) {
+    .mobile-nav-icon {
+        right: 45px;
+    }
+}
+
 /* Small phone to small tablet */
 @media only screen and (max-width:767px) {
-
+    .main-nav {
+        display: none;
+    }
+    .mobile-nav-icon {
+        display: block;
+    }
 }
 
 /* Small phone to 0 from 480px */
 @media only screen and (max-width:480px) {
 
+    .mobile-nav-icon {
+        top: 50px;
+    }
+
+    .sticky .logo {
+        margin-top: 0px;
+    }
 }
