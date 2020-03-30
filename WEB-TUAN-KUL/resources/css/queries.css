@@ -1,0 +1,60 @@
+/* Big tablet to 1200px */
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 16px;
+    }
+    .heading-main-box {
+        transform: translate(-20%, -50%);
+    }
+    form {
+        margin-left: 30%;
+    }
+}
+
+/* Small tablet to big tablet from 768 to 1023 */
+@media only screen and (max-width:1023px) {
+    .logo {
+        width: 220px;
+        margin-left: 40px;
+    }
+    .main-nav{
+        margin-top: 45px;
+        margin-right: 10px;
+    }
+    .main-nav li {
+        margin-right: 10px;
+    }
+    .heading-main-box {
+        transform: translate(-50%, -50%);
+    }
+    .product-box {
+        width: 29%;
+        height: 270px;
+    }
+    .product-box .btn {
+        width: 80%;
+        height: 10%;
+        font-size: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .product-box h3 {
+        font-size: 70%
+    }
+    .product-box ul li{
+        margin-left: 10%;
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small phone to small tablet */
+@media only screen and (max-width:767px) {
+
+}
+
+/* Small phone to 0 from 480px */
+@media only screen and (max-width:480px) {
+
+}
